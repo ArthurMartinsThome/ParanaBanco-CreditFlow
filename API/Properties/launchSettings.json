@@ -1,0 +1,28 @@
+// Dentro do seu arquivo Properties/launchSettings.json
+{
+  "profiles": {
+    "CreditFlow.Api": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      // Alterado para rodar APENAS em HTTP na porta 5289,
+      // resolvendo o erro do certificado de desenvolvimento.
+      "applicationUrl": "http://localhost:5289",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+    // Removidas as configurações duplicadas de "http", "https", "IIS Express" e "Container (Dockerfile)" 
+    // para simplificar e garantir que a aplicação inicie no perfil correto.
+  },
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:46942",
+      "sslPort": 44354
+    }
+  }
+}

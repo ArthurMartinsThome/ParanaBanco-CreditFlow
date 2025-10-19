@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-CreditFlow.MS.Card-866b035b-97ca-435a-a1a2-edd5fa10f2b2</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CreditFlow.Application.Card\CreditFlow.Application.Card.csproj" />
+    <ProjectReference Include="..\CreditFlow.Domain\CreditFlow.Domain.csproj" />
+    <ProjectReference Include="..\CreditFlow.Infra.Packages\CreditFlow.Infra.Packages.csproj" />
+    <ProjectReference Include="..\CreditFlow.Integration.RabbitMq\CreditFlow.Integration.RabbitMq.csproj" />
+  </ItemGroup>
+</Project>

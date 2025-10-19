@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Adapter.Document\CreditFlow.Integration.Document.csproj" />
+    <ProjectReference Include="..\CreditFlow.Domain\CreditFlow.Domain.csproj" />
+    <ProjectReference Include="..\CreditFlow.Integration.RabbitMq\CreditFlow.Integration.RabbitMq.csproj" />
+  </ItemGroup>
+
+</Project>

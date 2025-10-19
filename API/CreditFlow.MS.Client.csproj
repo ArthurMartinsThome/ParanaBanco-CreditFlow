@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>a8db46fb-89b6-4f29-b588-ac7b4a4a652e</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.22.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Adapter.Document\CreditFlow.Integration.Document.csproj" />
+    <ProjectReference Include="..\CreditFlow.Application\CreditFlow.Application.Client.csproj" />
+    <ProjectReference Include="..\CreditFlow.Domain\CreditFlow.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
